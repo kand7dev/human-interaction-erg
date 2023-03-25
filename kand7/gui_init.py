@@ -25,8 +25,8 @@ def createWindow(geo="1000x800"):
     Button(window, text="Quit", command=quit, pady=5,
            padx=5, font=FONT, background=BACKGROUND, foreground=FOREGROUND, highlightthickness=0, activebackground=FOREGROUND).pack(padx=10, pady=10)
     menuBar = Menu(window)
-    menuBar.config(background=FOREGROUND,
-                   foreground=BACKGROUND, font=("monospace", 10))
+    menuBar.config(background=BACKGROUND,
+                   foreground=FOREGROUND, border=False, font=("monospace", 12))
     fileMenu = Menu(menuBar, tearoff=0)
     fileMenu.add_command(label="Functions")
     fileMenu.add_command(label="Help")
