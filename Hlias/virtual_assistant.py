@@ -57,11 +57,11 @@ def find_weather():
 
 def start():
     commands = {"weather": find_weather,"song": play_song,"gps" : gps }
-    give_command =  input("give a command")
+    give_command =  input("give a command: ")
     if give_command == "weather":
         find_weather()
     elif give_command == "song":
         play_song()
-    else:
+    elif give_command == "gps":
         gps()
 start()
