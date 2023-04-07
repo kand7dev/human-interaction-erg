@@ -45,7 +45,7 @@ def find_weather():
         wind_speed = data["wind"]["speed"]
         wind_direction = data["wind"]["deg"]
     
-        print(f"Current weather in {CITY}:")
+        print(f"Current weather in {cities}:")
         print(f"Weather: {weather}")
         print(f"Temperature: {temperature}°C")
         print(f"Feels like: {feels_like}°C")
